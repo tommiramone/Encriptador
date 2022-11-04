@@ -56,6 +56,10 @@ main {
       border: none;
       resize: none;
 
+      &:focus {
+        outline: none;
+      }
+
       @include gt-sm {
         font-size: 1.5em;
       }
@@ -87,6 +91,10 @@ main {
         transition: all 0.7s;
         display: none;
         resize: none;
+
+        &:focus {
+          outline: none;
+        }
 
         @include gt-md {
           font-size: 1.5em;
