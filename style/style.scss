@@ -1,0 +1,127 @@
+@use "media-queries.scss" as *;
+$primary-font-size: "Anton", sans-serif;
+$second-font-size: "Lato", sans-serif;
+
+a {
+  color: white;
+  &:link,
+  &:visited,
+  &:active {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+body {
+  background-color: #a3e7ff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+header {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  font-size: 4em;
+  font-family: $primary-font-size;
+}
+
+main {
+  margin-top: 2em;
+  font-family: $second-font-size;
+  text-align: center;
+
+  .textos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @include gt-md {
+      display: grid;
+      grid-template-columns: 2fr 50%;
+    }
+
+    .antes {
+      margin-bottom: 1em;
+    }
+
+    #textAntes {
+      font-family: $second-font-size;
+      background-color: inherit;
+      padding: 0.7em;
+      margin: auto;
+      border: none;
+      resize: none;
+
+      @include gt-sm {
+        font-size: 1.5em;
+      }
+    }
+
+    .despues {
+      margin: auto;
+
+      .noTxt {
+        p {
+          font-size: 1em;
+          @include gt-md {
+            font-size: 2.5em;
+          }
+        }
+        #imagen {
+          width: 20%;
+
+          @include gt-md {
+            width: 37%;
+          }
+        }
+      }
+
+      #textAreaDespues {
+        font-family: $second-font-size;
+        background-color: white;
+        border: inherit;
+        transition: all 0.7s;
+        display: none;
+        resize: none;
+
+        @include gt-md {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  .botones {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    #reiniciar,
+    #encriptar {
+      margin: 1em;
+      color: white;
+      font-weight: 800;
+      background-color: #002366;
+      font-size: 1.2em;
+      padding: 1em;
+    }
+
+    @include gt-sm {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      margin-top: 5em;
+    }
+  }
+}
+
+footer {
+  font-family: $second-font-size;
+  font-size: 1em;
+  margin-top: 1em;
+  text-align: center;
+}

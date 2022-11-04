@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header>Encr!ptador</header>
+
+    <main>
+      <div class="textos">
+        <div class="antes">
+          <textarea name="" id="textAntes" cols="45" rows="10">
+Ingrese su texto aquí</textarea
+          >
+        </div>
+
+        <div class="despues">
+          <div class="noTxt">
+            <p>No se ha introducido un texto</p>
+            <img src="img/unnamed.png" alt="" id="imagen" />
+          </div>
+
+          <textarea
+            name=""
+            readonly="readonly"
+            id="textAreaDespues"
+            cols="45"
+            rows="11"
+          >
+          </textarea>
+        </div>
+      </div>
+
+      <div class="botones">
+        <button id="encriptar">ENCRIPTAR</button>
+        <a href="index.html"><button id="reiniciar">REINICIAR</button></a>
+      </div>
+    </main>
+
+    <footer>© Pagina realizada por Tomás Duro</footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>
